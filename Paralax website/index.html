@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website Demo | Cover By Codehal</title>
+    <!-- ..................Custom Css Link............... -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--................... Start NavBar.................. -->
+    <nav>
+        <div class="container nav-container">
+            <a href="" class="logo"><h3>Beg Joker.</h3></a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--................... End NavBar.................. -->
+
+    <!--................... Start Parallax Section .................. -->
+    <section class="Parallax"> 
+        <img src="./img/hill1.png" id="hill1">
+        <img src="./img/hill2.png" id="hill2">
+        <img src="./img/hill3.png" id="hill3">
+        <img src="./img/hill4.png" id="hill4">
+        <img src="./img/hill5.png" id="hill5">
+        <img src="./img/tree.png" id="tree">
+        <h1 class="heading-text">Parallax Website</h1>
+        <img src="./img/leaf.png" id="leaf">
+        <img src="./img/plant.png" id="plant">
+    </section>
+    <!--................... End Parallax Section.................. -->
+
+
+    <!--...................Demo Text.................. -->
+    <section class="Demo-Text">
+        <div class="container">
+            <h2>Parallax Scroll Website</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam incidunt asperiores nesciunt delectus saepe, doloribus mollitia reiciendis sit enim at beatae dignissimos debitis eligendi sequi sapiente eaque molestiae dolorum minus dolorem impedit officia iste nemo? Facilis ut repudiandae provident voluptates hic repellat iusto maxime animi! Veritatis quibusdam dicta nobis veniam reiciendis, cum recusandae eum. Iure nobis dolorem amet autem delectus. Id odit culpa, facere qui fugiat similique dolorem alias nulla, cum sequi odio labore nihil corporis? Dolores ad necessitatibus reprehenderit. Ad repudiandae mollitia necessitatibus reiciendis quo repellat omnis hic minus maiores facere! Explicabo, corrupti reiciendis porro error perferendis aspernatur dicta hic vel sunt quis odio, magnam impedit culpa esse? Molestiae ab aspernatur ratione eum, fugiat maiores exercitationem autem atque laudantium repellat impedit sit molestias! Sint, numquam perspiciatis? Iste rerum veniam ipsa tenetur explicabo? In eligendi labore, nobis ipsam culpa quaerat mollitia dicta voluptatibus distinctio assumenda officiis optio placeat fuga provident quia natus veritatis, asperiores nulla consequuntur illo, nostrum sunt sint corrupti temporibus. Aliquid provident molestias tenetur, quia commodi maiores quisquam, voluptates explicabo ad expedita accusantium amet! Facere maxime laboriosam, laudantium natus doloribus delectus neque dignissimos id libero sapiente vero, soluta saepe dicta, illo aut ipsa dolores nisi voluptatum a.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam incidunt asperiores nesciunt delectus saepe, doloribus mollitia reiciendis sit enim at beatae dignissimos debitis eligendi sequi sapiente eaque molestiae dolorum minus dolorem impedit officia iste nemo? Facilis ut repudiandae provident voluptates hic repellat iusto maxime animi! Veritatis quibusdam dicta nobis veniam reiciendis, cum recusandae eum. Iure nobis dolorem amet autem delectus. Id odit culpa, facere qui fugiat similique dolorem alias nulla, cum sequi odio labore nihil corporis? Dolores ad necessitatibus reprehenderit. Ad repudiandae mollitia necessitatibus reiciendis quo repellat omnis hic minus maiores facere! Explicabo, corrupti reiciendis porro error perferendis aspernatur dicta hic vel sunt quis odio, magnam impedit culpa esse? Molestiae ab aspernatur ratione eum, fugiat maiores exercitationem autem atque laudantium repellat impedit sit molestias! Sint, numquam perspiciatis? Iste rerum veniam ipsa tenetur explicabo? In eligendi labore, nobis ipsam culpa quaerat mollitia dicta voluptatibus distinctio assumenda officiis optio placeat fuga provident quia natus veritatis, asperiores nulla consequuntur illo, nostrum sunt sint corrupti temporibus. Aliquid provident molestias tenetur, quia commodi maiores quisquam, voluptates explicabo ad expedita accusantium amet! Facere maxime laboriosam, laudantium natus doloribus delectus neque dignissimos id libero sapiente vero, soluta saepe dicta, illo aut ipsa dolores nisi voluptatum a.
+            </p>
+        </div>
+        <br>       
+        <br>       
+        <br>       
+    </section>
+    <!--...................Demo Text.................. -->
+
+
+    <!--...................Start Script.................. -->
+    <script>
+
+        let HeadeingText = document.querySelector('.heading-text');
+        let Leaf = document.querySelector('#leaf');
+        let Hill1 = document.querySelector('#hill1');
+        let Hill4 = document.querySelector('#hill4');
+        let Hill5 = document.querySelector('#hill5');
+      
+
+        window.addEventListener('scroll',()=>{
+            let Value = window.scrollY;
+
+            HeadeingText.style.marginTop = Value * 2.5 + 'px';
+            Leaf.style.top = Value * -1.5 + 'px';
+            Leaf.style.left = Value * 1.5 + 'px';
+            Hill5.style.left = Value * 1.5 + 'px';
+            Hill4.style.left = Value * -1.5 + 'px';
+            Hill1.style.top = Value * 1 + 'px';
+        });
+
+    </script>
+    <!--...................End Script.................. -->
+</body>
+</html>
